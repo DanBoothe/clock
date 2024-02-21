@@ -1,0 +1,73 @@
+body {
+    background-image: url(../assets/images/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 13rem;
+    font-size: 8rem;
+}
+
+.hero {
+    width: 100%;
+    min-height: 90vh;
+    color: #fff;
+    position:relative;
+}
+
+.container {
+    width: 100rem;
+    height: 25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clock {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.11);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4rem);
+}
+
+.clock span {
+    font-size: 15rem;
+    width: 11rem;
+    display: inline-block;
+    text-align: center;
+    position: relative; 
+}
+
+.clock span::after {
+    font-size: 1.6rem;
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.prompts {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    font-size:7rem;
+    transform: translate(-50%, -50%);
+}
+
+#defconYellow {  
+    color: yellow;  
+    visibility: hidden;
+}
+
+#defconRed {   
+    color: #AD0000; 
+    visibility: hidden;
+}
+

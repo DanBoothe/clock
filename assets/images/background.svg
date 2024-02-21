@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+	
+		.st0{opacity:0.7;clip-path:url(#SVGID_00000157304111026962370770000017384748410207312001_);fill:url(#SVGID_00000171716426636721872510000008422768345284579236_);}
+	.st1{clip-path:url(#SVGID_00000157304111026962370770000017384748410207312001_);}
+	.st2{fill:#53B8E8;}
+	.st3{fill:#0097D5;}
+	.st4{fill:#006DB6;}
+	.st5{fill:#0061A0;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="1920" height="1080"/>
+	</defs>
+	<clipPath id="SVGID_00000071549978562333724660000002481832990415012285_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	
+		<linearGradient id="SVGID_00000119102127958861081120000012882912274277545872_" gradientUnits="userSpaceOnUse" x1="210" y1="1290" x2="1710" y2="-210">
+		<stop  offset="0" style="stop-color:#004070"/>
+		<stop  offset="1" style="stop-color:#95C7EB"/>
+	</linearGradient>
+	
+		<rect style="opacity:0.7;clip-path:url(#SVGID_00000071549978562333724660000002481832990415012285_);fill:url(#SVGID_00000119102127958861081120000012882912274277545872_);" width="1920" height="1080"/>
+	<g style="clip-path:url(#SVGID_00000071549978562333724660000002481832990415012285_);">
+		<path class="st2" d="M236.5,610.16l794.64-793.14c-207.83-18.3-427.88,48.81-586.81,207.44
+			C285.4,183.08,212.05,402.72,236.5,610.16z"/>
+		<path class="st3" d="M493.21,915.2L1520.13-109.78c-73.35-61.01-152.82-103.72-244.51-134.22L358.74,671.16
+			C389.3,756.57,432.09,841.99,493.21,915.2z"/>
+		<path class="st4" d="M639.95,1324l916.89-915.16c-30.56-85.42-73.35-170.83-134.48-244.04L401.56,1195.88
+			C468.8,1256.89,554.38,1299.59,639.95,1324z"/>
+		<path class="st5" d="M1685.17,469.79l-794.63,793.14c207.83,18.3,427.88-48.81,586.8-207.44S1703.51,683.33,1685.17,469.79z"/>
+	</g>
+</g>
+</svg>
