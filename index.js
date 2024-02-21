@@ -7,7 +7,7 @@ let defconYellow = document.getElementById('defconYellow');
 let defconRed = document.getElementById('defconRed');
 let displayDay = document.getElementById('day');
 
-setInterval(() => {
+const displayTime = () => {
     let currentTime = new Date();
     let hrsFormat;
 
@@ -74,5 +74,11 @@ setInterval(() => {
     hrs.innerHTML = hrsFormat;
     min.innerHTML = (currentTime.getMinutes() < 10?"0":"") + currentTime.getMinutes();
     sec.innerHTML = (currentTime.getSeconds() < 10?"0":"") + currentTime.getSeconds();
+}
+
+displayTime();
+
+setInterval(() => {
+    displayTime();
 }, 1000);
 
