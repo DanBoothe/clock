@@ -12,8 +12,8 @@ h1 {
 
 .hero {
     width: 100%;
-    min-height: 90vh;
-    color: #fff;
+    min-height: 100vh;
+    color: #ffffff;
     position:relative;
 }
 
@@ -63,11 +63,11 @@ h1 {
 
 #defconYellow {  
     color: yellow;  
-    visibility: hidden;
+    display: none;
 }
 
 #defconRed {   
     color: #AD0000; 
-    visibility: hidden;
+    display: none;
 }
 
