@@ -3,14 +3,12 @@ let displayDay = document.getElementById('day');
 let hrs = document.getElementById('hours');
 let min = document.getElementById('min');
 let sec = document.getElementById('sec');
-let hrsSeparator = document.getElementById('hrsSeparator');
-let minSeparator = document.getElementById('minSeparator');
 
 let defconYellow = document.getElementById('defconYellow');
 let defconRed = document.getElementById('defconRed');
 
 //Holds elements that will change on condition
-let colorChangeArr = [hrs, min, sec, hrsSeparator, minSeparator, displayDay]
+let colorChangeArr = [hrs, min, sec, displayDay]
 
 //formats date to be readable
 const formatDate = () => {
@@ -110,8 +108,8 @@ const colorChangeCheck = (hours) => {
 //Displays the date on screen
 const displayDate = (day, hour, minute, second) => {
     displayDay.innerHTML = day;
-    hrs.innerHTML = hour;
-    min.innerHTML = minute
+    hrs.innerHTML = `${hour}:`;
+    min.innerHTML = `${minute}:`
     sec.innerHTML = second
 }
 
