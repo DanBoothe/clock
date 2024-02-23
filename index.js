@@ -82,7 +82,7 @@ const formatDate = () => {
     }
 
     colorChangeCheck(unformattedHr);
-    displayDate(formattedDateArr[0], formattedDateArr[1], formattedDateArr[2], formattedDateArr[3]);
+    return formattedDateArr;
 }
 
 //changes color of text on screen based on how close to cutoff we are
@@ -106,16 +106,16 @@ const colorChangeCheck = (hours) => {
 }
 
 //Displays the date on screen
-const displayDate = (day, hour, minute, second) => {
-    displayDay.innerHTML = day;
-    hrs.innerHTML = `${hour}:`;
-    min.innerHTML = `${minute}:`
-    sec.innerHTML = second
+const displayDate = (dateArr) => {
+    displayDay.innerHTML = dateArr[0];
+    hrs.innerHTML = `${dateArr[1]}:`;
+    min.innerHTML = `${dateArr[2]}:`
+    sec.innerHTML = dateArr[3];
 }
 
-formatDate();
+displayDate(formatDate());
 
 setInterval(() => {
-    formatDate();
+    displayDate(formatDate());
 }, 1000);
 
