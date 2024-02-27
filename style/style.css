@@ -73,7 +73,7 @@ h1 {
     display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
     body {
         background-color: black;
         background-image: none;
