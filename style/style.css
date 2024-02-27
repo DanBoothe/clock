@@ -74,6 +74,11 @@ h1 {
 }
 
 @media screen and (min-width: 1200px) {
+    body {
+        background-color: black;
+        background-image: none;
+    }
+    
     h1 {
         text-align: center;
         padding-top: 5rem;
