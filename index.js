@@ -1,4 +1,6 @@
 //Grabbing changeable fields
+let month = document.getElementById('month');
+let dayNum = document.getElementById('dayNum');
 let displayDay = document.getElementById('day');
 let hrs = document.getElementById('hours');
 let min = document.getElementById('min');
@@ -8,12 +10,14 @@ let defconYellow = document.getElementById('defconYellow');
 let defconRed = document.getElementById('defconRed');
 
 //Holds elements that will change on condition
-let colorChangeArr = [hrs, min, sec, displayDay]
+let colorChangeArr = [hrs, min, sec, displayDay, month, dayNum]
 
 //formats date to be readable
 const formatDate = () => {
 
     let currentTime = new Date();
+    let displayMonth;
+    let displayDayOfMonth = currentTime.getDate();
     let dayOfWeek;
     let unformattedHr = currentTime.getHours();
     let formatMin = currentTime.getMinutes();
@@ -59,9 +63,6 @@ const formatDate = () => {
     let formatHrs = unformattedHr;
     if(formatHrs > 12) {
         formatHrs -= 12;
-        if (formatHrs < 10) {
-            formatHrs = `0${formatHrs}`;
-        }
     }
     formattedDateArr.push(formatHrs);    
 
@@ -80,6 +81,51 @@ const formatDate = () => {
     } else {
         formattedDateArr.push(formatSec);
     }
+
+    switch (currentTime.getMonth()) {
+        case 0: 
+            displayMonth = 'January';
+            break;
+        case 1: 
+            displayMonth = 'February';
+            break;
+        case 2: 
+            displayMonth = 'March';
+            break;
+        case 3: 
+            displayMonth = 'April';
+            break;
+        case 4: 
+            displayMonth = 'May';
+            break;
+        case 5: 
+            displayMonth = 'June';
+            break;
+        case 6: 
+            displayMonth = 'July';
+            break;
+        case 7: 
+            displayMonth = 'August';
+            break;
+        case 8: 
+            displayMonth = 'September';
+            break;
+        case 9: 
+            displayMonth = 'October';
+            break;
+        case 10: 
+            displayMonth = 'November';
+            break;
+        case 11: 
+            displayMonth = 'December';
+            break;
+        default: 
+            displayMonth = 'OOOOOPSIES :('
+
+    }
+
+    formattedDateArr.push(displayMonth);
+    formattedDateArr.push(displayDayOfMonth);
 
     colorChangeCheck(unformattedHr);
     return formattedDateArr;
@@ -103,14 +149,17 @@ const colorChangeCheck = (hours) => {
                 colorChangeArr[i].style.color = '#FFFFFF';
         }
     }
+
 }
 
 //Displays the date on screen
 const displayDate = (dateArr) => {
-    displayDay.innerHTML = dateArr[0];
+    displayDay.innerHTML = `${dateArr[0]}, `;
     hrs.innerHTML = `${dateArr[1]}:`;
     min.innerHTML = `${dateArr[2]}:`
     sec.innerHTML = dateArr[3];
+    dayNum.innerHTML = `${dateArr[5]}`;
+    month.innerHTML = `${dateArr[4]} `;
 }
 
 displayDate(formatDate());
