@@ -15,9 +15,9 @@ const formatDate = () => {
 
     let currentTime = new Date();
     let dayOfWeek;
-    let unformattedHr = currentTime.getHours();
-    let formatMin = currentTime.getMinutes();
-    let formatSec = currentTime.getSeconds();
+    let unformattedHr = 16// currentTime.getHours();
+    let formatMin = 5//currentTime.getMinutes();
+    let formatSec = 0//currentTime.getSeconds();
     let formattedDateArr = [];
 
     //formats day of the week
