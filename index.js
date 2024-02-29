@@ -19,7 +19,7 @@ const formatDate = () => {
     let displayMonth;
     let displayDayOfMonth = currentTime.getDate();
     let dayOfWeek;
-    let unformattedHr = currentTime.getHours();
+    let unformattedHr = 15//currentTime.getHours();
     let formatMin = currentTime.getMinutes();
     let formatSec = currentTime.getSeconds();
     let formattedDateArr = [];

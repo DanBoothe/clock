@@ -7,65 +7,39 @@ body {
     background-image: url(../assets/images/backgroundV2.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     text-align: center;
-    padding-top: 13rem;
-    font-size: 6rem;
-}
-
-.hero {
-    width: 100%;
-    min-height: 100vh;
-    color: #ffffff;
-    position:relative;
+    font-size: 10rem;
+    margin: 8rem 0;
 }
 
 .container {
-    width: 100rem;
-    height: 25rem;
-    position: absolute;
-    top: 57%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 75vw;
+    background-color: rgba(0, 0, 0, .25);
+    border-radius: 1.5rem;
+    backdrop-filter: blur(1rem);
 }
 
 .clock {
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.11);
-    border-radius: 1rem;
     display: flex;
-    align-items: center;
     justify-content: center;
-    backdrop-filter: blur(4rem);
 }
 
 .clock span {
     font-size: 25rem;
-    display: inline-block;
-    text-align: center;
-    position: relative; 
-    
-}
-
-.clock span::after {
-    font-size: 1.6rem;
-    position: absolute;
-    bottom: -.5rem;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .prompts {
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    font-size:7rem;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    font-size: 8rem;
+    margin: 8rem 0;
 }
+
 
 #defconYellow {  
     color: yellow;  
@@ -73,28 +47,8 @@ h1 {
 }
 
 #defconRed {   
-    color: red; 
-    display: none;
+    color: #AD0000; 
+    display:none;
+
 }
 
-@media screen and (min-width: 800px) {
-
-    
-    h1 {
-        text-align: center;
-        padding-top: 15rem;
-        font-size: 12rem;
-    }
-    
-    .container {
-        width: 150rem;
-        height: 25rem;
-    }
-
-    .prompts {
-        font-size: 6rem;
-        position: absolute;
-        top: 88%;
-        max-width: 100vw;
-    }
-}
