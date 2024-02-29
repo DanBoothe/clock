@@ -4,19 +4,20 @@
 }
 
 body {
-    background-image: url(../assets/images/background.svg);
+    background-image: url(../assets/images/backgroundV3.svg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 4rem;
 }
 
 h1 {
     text-align: center;
     font-size: 5rem;
-    margin: 4rem 0;
+    margin: 6rem 0;
 }
 
 .container {
@@ -37,7 +38,7 @@ h1 {
 
 .prompts {
     font-size: 4rem;
-    margin: 5rem 0;
+    margin: 6rem 0;
 }
 
 
